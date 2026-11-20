@@ -1,0 +1,364 @@
+
+/* =========================================
+   JOBTRACK - PROFESSIONAL LOGIN DESIGN
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* MAIN LOGIN PAGE */
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  background: #f4f6fa;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #202b3c;
+}
+
+/* LOGIN CARD */
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 42px;
+  background: #ffffff;
+  border: 1px solid #e8edf5;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(25, 42, 70, 0.07);
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #17243a;
+  font-size: 33px;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  margin: 0 0 10px;
+}
+
+.login-subtitle {
+  color: #778398;
+  margin: 0 0 32px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.login-card h2 {
+  color: #17243a;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+.login-description {
+  color: #778398;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 27px;
+}
+
+/* PORTAL SELECTION */
+
+.portal-card {
+  max-width: 720px;
+  padding: 48px;
+}
+
+.portal-options {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.portal-button {
+  flex: 1;
+  min-width: 0;
+  min-height: 205px;
+  padding: 30px 20px;
+  border: 1.5px solid #e1e7f0;
+  border-radius: 13px;
+  background: #ffffff;
+  color: #17243a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.portal-button:hover {
+  transform: translateY(-4px);
+  border-color: #3157d5;
+  box-shadow: 0 10px 25px rgba(25, 42, 70, 0.08);
+}
+
+.user-portal:hover {
+  background: #f8faff;
+}
+
+.admin-portal:hover {
+  border-color: #3157d5;
+  background: #f8faff;
+}
+
+.portal-icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.portal-button > span:nth-child(2) {
+  color: #17243a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.portal-button small {
+  color: #778398;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* LOGIN AND REGISTRATION FORMS */
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 25px;
+}
+
+.login-card input {
+  width: 100%;
+  min-height: 47px;
+  padding: 13px 15px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #26344a;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-card input::placeholder {
+  color: #9aa5b5;
+}
+
+.login-card input:focus {
+  border-color: #3157d5;
+  box-shadow: 0 0 0 3px rgba(49, 87, 213, 0.1);
+}
+
+.login-card form button {
+  width: 100%;
+  min-height: 47px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3157d5;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-card form button:hover {
+  background: #2445b5;
+  transform: translateY(-1px);
+}
+
+.login-card form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* BACK BUTTON */
+
+.login-card .back-button {
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px 14px;
+  background: #edf2ff;
+  border: 1px solid #dce5ff;
+  border-radius: 7px;
+  color: #3157d5;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-card .back-button:hover {
+  background: #e0e9ff;
+}
+
+/* REGISTRATION TEXT */
+
+.register-text {
+  margin-top: 25px;
+  color: #778398;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.register-text span {
+  color: #3157d5;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.register-text span:hover {
+  text-decoration: underline;
+}
+
+/* OLD LOGIN MESSAGE SUPPORT */
+
+.login-message {
+  color: #b42332;
+  background: #fff0f0;
+  border: 1px solid #f3c4c7;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+/* INLINE NOTIFICATIONS */
+
+.login-card .notification {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  width: 100%;
+  padding: 13px 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  animation: notificationAppear 0.25s ease;
+}
+
+.login-card .notification-success {
+  background: #eaf8f0;
+  color: #176b3b;
+  border: 1px solid #bce7ce;
+}
+
+.login-card .notification-error {
+  background: #fff0f0;
+  color: #b42332;
+  border: 1px solid #f3c4c7;
+}
+
+.login-card .notification-info {
+  background: #edf3ff;
+  color: #2445a5;
+  border: 1px solid #cbd9ff;
+}
+
+.login-card .notification-icon {
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.login-card .notification-message {
+  flex: 1;
+  min-width: 0;
+  font-weight: 500;
+}
+
+.login-card .notification-close {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ANIMATION */
+
+@keyframes notificationAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px 14px;
+  }
+
+  .login-card,
+  .portal-card {
+    padding: 30px 22px;
+  }
+
+  .portal-options {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .portal-button {
+    width: 100%;
+    min-height: 155px;
+  }
+
+  .login-card h1 {
+    font-size: 28px;
+  }
+
+  .login-card h2 {
+    font-size: 21px;
+  }
+
+  .login-card .notification {
+    padding: 11px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .login-card,
+  .portal-card {
+    padding: 25px 17px;
+  }
+
+  .login-card h1 {
+    font-size: 25px;
+  }
+}
